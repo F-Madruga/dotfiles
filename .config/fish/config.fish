@@ -2,6 +2,9 @@
 function fish_greeting
 end
 
+set TERM "xterm-256color"
+set EDITOR "nvim"
+
 ### SET VIM KEYS AS DEFAULT ###
 set fish_key_bindings fish_user_key_bindings
 
@@ -16,6 +19,11 @@ alias clean='echo "START APT AUTOCLEAN" && sudo apt autoclean && echo "START APT
 alias pip_update="pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip3 install -U"
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 
 # NVIM
 alias vim='nvim'
