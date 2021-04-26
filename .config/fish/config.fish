@@ -27,6 +27,7 @@ alias fgrep='fgrep --color=auto'
 
 # NVIM
 alias vim='nvim'
+alias vi='nvim'
 
 # Docker alias
 alias show_docker='docker images && echo && docker ps -a && echo && docker network ls'
